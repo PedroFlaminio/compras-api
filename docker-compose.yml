@@ -1,0 +1,15 @@
+services:
+  compras-api:
+    container_name: compras-api
+    hostname: compras-api
+    restart: unless-stopped
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    ports:
+      - "3012:8080"
+
+    environment:
+      - NODE_ENV=production

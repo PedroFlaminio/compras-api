@@ -1,0 +1,252 @@
+[
+  {
+    "produto": "Carne",
+    "categoria": "Açougue",
+    "unidadeMedida": "KG"
+  },
+  {
+    "produto": "Biscoito",
+    "categoria": "Alimento",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Chocolate",
+    "categoria": "Alimento",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Filtro de café",
+    "categoria": "Alimento",
+    "unidadeMedida": "CX"
+  },
+  {
+    "produto": "Nan",
+    "categoria": "Alimento",
+    "unidadeMedida": "LATA"
+  },
+  {
+    "produto": "Ovos",
+    "categoria": "Alimento",
+    "unidadeMedida": "BANDEJA"
+  },
+  {
+    "produto": "Pão de forma",
+    "categoria": "Alimento",
+    "unidadeMedida": "SACO"
+  },
+  {
+    "produto": "Pão Francês",
+    "categoria": "Alimento",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Papel alumínio",
+    "categoria": "Alimento",
+    "unidadeMedida": "ROLO"
+  },
+  {
+    "produto": "Polpa de tomate",
+    "categoria": "Alimento",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Vinagrão",
+    "categoria": "Alimento",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Vinagre",
+    "categoria": "Alimento",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Pão de queijo",
+    "categoria": "Congelados",
+    "unidadeMedida": "KG"
+  },
+  {
+    "produto": "Carefree",
+    "categoria": "Higiene",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Condicionador Bẽbe",
+    "categoria": "Higiene",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Cotonete",
+    "categoria": "Higiene",
+    "unidadeMedida": "CAIXA"
+  },
+  {
+    "produto": "Escova de dente",
+    "categoria": "Higiene",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Fio dental",
+    "categoria": "Higiene",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Fralda",
+    "categoria": "Higiene",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Macarrão",
+    "categoria": "Higiene",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Papel higiênico",
+    "categoria": "Higiene",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Sabonete",
+    "categoria": "Higiene",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Abacate",
+    "categoria": "Hortifrúti",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Abóbora",
+    "categoria": "Hortifrúti",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Banana",
+    "categoria": "Hortifrúti",
+    "unidadeMedida": "CACHO"
+  },
+  {
+    "produto": "Batata",
+    "categoria": "Hortifrúti",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Cebola",
+    "categoria": "Hortifrúti",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Maçã",
+    "categoria": "Hortifrúti",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Mandioquinha",
+    "categoria": "Hortifrúti",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Manga",
+    "categoria": "Hortifrúti",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Tomate",
+    "categoria": "Hortifrúti",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Água sanitária",
+    "categoria": "Limpeza",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Desodorante Fem.",
+    "categoria": "Limpeza",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Desodorante Masc.",
+    "categoria": "Limpeza",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Detergente",
+    "categoria": "Limpeza",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Luva p/ Limpeza",
+    "categoria": "Limpeza",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Papel toalha",
+    "categoria": "Limpeza",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Sabão roupas",
+    "categoria": "Limpeza",
+    "unidadeMedida": "LITRO"
+  },
+  {
+    "produto": "Sabão roupas bêbe",
+    "categoria": "Limpeza",
+    "unidadeMedida": "LITRO"
+  },
+  {
+    "produto": "Saco de lixo grande",
+    "categoria": "Limpeza",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Saco de lixo pia/banheiro",
+    "categoria": "Limpeza",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Veja",
+    "categoria": "Limpeza",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Petisco seco",
+    "categoria": "Petcare",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Ração",
+    "categoria": "Petcare",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Sachê",
+    "categoria": "Petcare",
+    "unidadeMedida": "PACOTE"
+  },
+  {
+    "produto": "Iogurte",
+    "categoria": "Refrigerados",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Leite",
+    "categoria": "Refrigerados",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Manteiga",
+    "categoria": "Refrigerados",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Queijo Muçarela",
+    "categoria": "Refrigerados",
+    "unidadeMedida": "UND"
+  },
+  {
+    "produto": "Requeijão",
+    "categoria": "Refrigerados",
+    "unidadeMedida": "UND"
+  }
+]
