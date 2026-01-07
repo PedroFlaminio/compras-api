@@ -1,6 +1,8 @@
 {
   "name": "compras-api",
   "version": "1.0.50",
+  "type": "module",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts",
@@ -9,13 +11,18 @@
   "dependencies": {
     "@elysiajs/cors": "^1.4.0",
     "@elysiajs/openapi": "^1.4.11",
-    "@prisma/client": "^6.19.0",
+    "@prisma/adapter-mariadb": "^7.2.0",
+    "@prisma/client": "^7.2.0",
+    "dotenv": "^17.2.3",
     "elysia": "latest",
-    "prisma": "^6.19.0",
     "zod": "^4.1.12"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@elysiajs/eden": "^1.4.6",
+    "@types/node": "^25.0.3",
+    "bun-types": "latest",
+    "prisma": "^7.2.0",
+    "vitest": "^4.0.16"
   },
   "module": "src/index.js"
 }
