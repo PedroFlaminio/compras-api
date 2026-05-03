@@ -3,6 +3,14 @@ generator client {
   output   = "./generated/prisma"
 }
 
+// generator prismabox {
+//   provider                    = "prismabox"
+//   typeboxImportDependencyName = "elysia"
+//   typeboxImportVariableName   = "t"
+//   inputModel                  = true
+//   output                      = "./generated/prismabox"
+// }
+
 datasource db {
   provider = "mysql"
 }
@@ -18,27 +26,28 @@ model Produto {
 }
 
 model Compra {
-  id            Int             @id @default(autoincrement())
-  dataCriada    DateTime        @default(now())
+  id            Int               @id @default(autoincrement())
+  dataCriada    DateTime          @default(now())
   dataRealizada DateTime?
   titulo        String
   status        String
   produtos      CompraProduto[]
   historico     CompraHistorico[]
 
-
   @@map("compras")
 }
-model CompraHistorico {
-  id          Int      @id @default(autoincrement())
-  id_compra   Int
-  dataAlteracao DateTime @default(now())
-  status      String
 
-  compra      Compra   @relation(fields: [id_compra], references: [id])
+model CompraHistorico {
+  id            Int      @id @default(autoincrement())
+  id_compra     Int
+  dataAlteracao DateTime @default(now())
+  status        String
+
+  compra Compra @relation(fields: [id_compra], references: [id])
 
   @@map("compras_historicos")
 }
+
 model CompraProduto {
   id         Int     @id @default(autoincrement())
   id_produto Int

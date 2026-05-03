@@ -13,17 +13,21 @@ export class HttpError extends Error {
   }
 }
 
-export const app = new Elysia({ prefix: "/compras-api" })
+export const createApp = () =>
+  new Elysia({ prefix: "/compras-api" })
+    .onError(({ error, status }) => {
+      if (error instanceof HttpError) return status(error.status, error)
+      console.error(error)
+      return status(400, { message: "Erro interno de servidor" })
+    })
+    .use(produtosRoutes)
+    .use(comprasRoutes)
+    .get("/seed", dbSeed)
+
+// App completo com plugins
+export const app = createApp()
   .use(cors())
   .use(openapi({ mapJsonSchema: { zod: z.toJSONSchema } }))
-  .onError(({ error, status }) => {
-    if (error instanceof HttpError) return status(error.status, error)
-    console.error(error)
-    return status(400, { message: "Erro interno de servidor" })
-  })
-  .use(produtosRoutes)
-  .use(comprasRoutes)
-  .get("/seed", dbSeed)
 
 if (import.meta.main) {
   app.listen(8080)

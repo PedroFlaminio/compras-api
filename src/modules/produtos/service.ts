@@ -1,22 +1,22 @@
-import prismaClient from "../../utils/prismaClient";
-import { InsertProduto } from "./model";
+import prismaClient from "../../utils/prismaClient"
+import { InsertProduto } from "./model"
 export const ProdutoService = {
   list: async () => {
     try {
-      const prod = prismaClient.produto.findMany();
-      return prod;
+      const prod = await prismaClient.produto.findMany()
+      return prod
     } catch (e) {
-      throw e;
+      throw e
     }
   },
   insert: async (novoProduto: InsertProduto) => {
     try {
-      const prod = prismaClient.produto.create({
+      const prod = await prismaClient.produto.create({
         data: novoProduto,
-      });
-      return prod;
+      })
+      return prod
     } catch (e) {
-      throw e;
+      throw e
     }
   },
-};
+}
