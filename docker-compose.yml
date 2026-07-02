@@ -12,9 +12,14 @@ services:
       - "3012:8080"
 
     environment:
-      - NODE_ENV=production        
+      - NODE_ENV=production
     env_file:
-      - .env  # ← ADICIONE ESTA LINHA
+      - .env
+    volumes:
+      - ./dist:/app/dist:ro
+      - ./prisma/schema.prisma:/app/prisma/schema.prisma:ro
+      - ./prisma/migrations:/app/prisma/migrations:ro
+      - ./package.json:/app/package.json:ro
     networks:
       - docker-server
 
