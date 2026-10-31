@@ -1,0 +1,26 @@
+# Produção no servidor Oracle (/srv/compras): https://restohub.com.br/lista-compras
+# API em 127.0.0.1:3050, publicada pelo nginx em /compras-api/. Banco `compras` no MySQL compartilhado
+# do servidor (/srv/mysql, serviço `db` na rede mysql_default). Segredos em /srv/compras/.env.
+services:
+  api:
+    build:
+      context: ./src
+      dockerfile: deploy/Dockerfile
+    image: compras-api
+    container_name: compras-api
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3050:8080"
+    networks: [mysql]
+    environment:
+      DATABASE_HOST: db
+      DATABASE_USER: compras
+      DATABASE_PASSWORD: "${DB_PASSWORD:?defina DB_PASSWORD no .env}"
+      DATABASE_NAME: compras
+      DATABASE_URL: "mysql://compras:${DB_PASSWORD}@db:3306/compras"
+    mem_limit: 512m
+
+networks:
+  mysql:
+    external: true
+    name: mysql_default

@@ -24,6 +24,7 @@ export const InsertCompraSchema = zod.object({
   novosProdutos: zod.array(zod.object({ quantidade: zod.number(), produto: zod.string(), categoria: zod.string() })),
   titulo: zod.string(),
 })
+export const UpdateCompraSchema = InsertCompraSchema
 // export const InsertCompraSchema = zod.array(zod.object({ quantidade: zod.number(), produto: Produto }));
 export const ListaComprasSchema = zod.array(
   zod.object({
@@ -41,6 +42,7 @@ export const RealizCompraSchema = zod.object({
 
 export type ListaCompras = zod.infer<typeof ListaComprasSchema>
 export type InsertCompra = zod.infer<typeof InsertCompraSchema>
+export type UpdateCompra = zod.infer<typeof UpdateCompraSchema>
 export type RealizCompras = zod.infer<typeof RealizCompraSchema>
 export type Compra = zod.infer<typeof CompraSchema>
 export const ListProdutosResponse = zod.array(Produto)

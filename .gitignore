@@ -42,4 +42,4 @@ yarn-error.log*
 package-lock.json
 bun.lock
 **/*.bun
-/generated/prisma
+prisma/generated

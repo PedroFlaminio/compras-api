@@ -1,5 +1,5 @@
 import { Elysia } from "elysia"
-import { CompraSchema, InsertCompraSchema, ListaComprasSchema, RealizCompraSchema } from "./model"
+import { CompraSchema, InsertCompraSchema, ListaComprasSchema, RealizCompraSchema, UpdateCompraSchema } from "./model"
 import { CompraService } from "./service"
 import { HttpError } from "../.."
 
@@ -42,6 +42,16 @@ export const comprasRoutes = new Elysia({ prefix: "/compras" })
       }
     },
     { body: InsertCompraSchema }
+  )
+  .put(
+    "/:id",
+    async ({ body, params: { id } }) => {
+      const idNumber = parseInt(id)
+      if (Number.isNaN(idNumber)) throw new HttpError("ID da compra inválido", 400)
+      await CompraService.update(idNumber, body)
+      return { message: "Sucesso ao atualizar compra" }
+    },
+    { body: UpdateCompraSchema }
   )
   .put(
     "/realizar",
